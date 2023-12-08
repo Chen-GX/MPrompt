@@ -1,7 +1,61 @@
-# MPrompt
-This repository contains the code for our research paper titled "MPrompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension", which has been accepted for the Findings of EMNLP 2023.
+# MPrompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension (EMNLP 2023 Findings)
 
-# Update Pending Publication
-We will fully update this repository with the relevant code and data upon acceptance of the paper. We appreciate your understanding and patience during this period.
+**This repository contains the code for our research paper titled "[MPrompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension](https://aclanthology.org/2023.findings-emnlp.343/)", which has been accepted for the Findings of EMNLP 2023.**
 
-Thank you for your interest in our research. If there are any questions or further clarification needed regarding our work, please feel free to reach out.
+# Requirements
+* Python 3.8
+* Ubuntu 22.04
+* Python Packages
+
+```
+conda create -n MPrompt python=3.9
+conda activate MPrompt
+pip install -r requirements.txt
+```
+
+# Data
+The folder `./qa_datasets` contains the example data. 
+```
+cd ./qa_datasets
+unzip *.zip
+```
+
+# Training
+For a single training, all scripts are located in the ./tdk_scripts folder:
+
+```
+cd ./tdk_scripts
+
+bash boolq_tdk.sh
+```
+
+
+For parameter grid search, all scripts are located in the ./search_param_scripts folder:
+
+```
+cd ./search_param_scripts
+
+bash boolq_prompt_len.sh
+```
+
+# Citation
+**If our work contributes to your research, please acknowledge it by citing our paper. We greatly appreciate your support.**
+```
+@inproceedings{chen-etal-2023-mprompt,
+    title = "{MP}rompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension",
+    author = "Chen, Guoxin  and
+      Qian, Yiming  and
+      Wang, Bowen  and
+      Li, Liangzhi",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.343",
+    pages = "5163--5175",
+}
+```
