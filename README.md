@@ -2,6 +2,8 @@
 
 **This repository contains the code for our research paper titled "[MPrompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension](https://aclanthology.org/2023.findings-emnlp.343/)", which has been accepted for the Findings of EMNLP 2023.**
 
+> Guoxin Chen, Yiming Qian, Bowen Wang, and Liangzhi Li. 2023. MPrompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension. In Findings of the Association for Computational Linguistics: EMNLP 2023, pages 5163–5175, Singapore. Association for Computational Linguistics.
+
 # Requirements
 * Python 3.8
 * Ubuntu 22.04
@@ -56,6 +58,7 @@ bash boolq_prompt_len.sh
     address = "Singapore",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2023.findings-emnlp.343",
+    doi = "10.18653/v1/2023.findings-emnlp.343",
     pages = "5163--5175",
 }
 ```
