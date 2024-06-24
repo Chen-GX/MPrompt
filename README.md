@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="logo/Logo.png" width="60%" align='center' />
+   <img src="logo/logo.png" width="60%" align='center' />
 </p>
 
 # MPrompt: Exploring Multi-level Prompt Tuning for Machine Reading Comprehension (EMNLP 2023 Findings)
